@@ -1,0 +1,127 @@
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: $localisation__bg;
+    gap: 10px;
+
+    p {
+        font-weight: bold;
+    }
+}
+
+.explorer {
+    @include flex-center;
+    background-color: $explorer__bg;
+    padding: 30px 0;
+
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+
+    &__titre {
+        flex-basis: 90%;
+        margin-bottom: 30px;
+    }
+
+    &__contenu {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-color: $localisation__bg;
+        position: relative;
+        border-radius: 15px;
+        padding: 25px 25px;
+        margin-left: 10px;
+        cursor: pointer;
+        @include box-shadow;
+
+        p {
+            font-weight: bold;
+        }
+
+        &:hover {
+            background-color: #f5edff;
+
+            .hover-color {
+                color: $primaire;
+            }
+        }
+    }
+
+    &__number {
+        position: absolute;
+        left: -10px;
+        top: 30%;
+        background-color: $primaire;
+        border-radius: 50%;
+        font-size: 0.8rem;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10px;
+    }
+}
+
+.restaurant {
+    display: flex;
+    flex-direction: column;
+    background-color: $explorer__bg;
+    padding: 30px 0;
+    gap: 30px;
+
+    &__card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 15px 15px 0 0;
+
+    }
+
+    &__titre {
+        text-align: center;
+        font-weight: 900;
+    }
+
+    &__card {
+        background-color: white;
+        border-radius: 15px;
+        position: relative;
+        color: black;
+        @include box-shadow;
+
+        & h2,
+        p {
+            margin: 5px auto;
+        }
+
+        @include new;
+
+        &Text {
+            position: relative;
+            margin-left: 20px;
+        }
+    }
+}
+
+.bloc__restaurant {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .restaurant__card {
+        flex-basis: 40%;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,14 @@
+.number{
+    position: absolute;
+    left: -10px;
+    top: 30%;
+    background-color: $primaire;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    color: white;
+}

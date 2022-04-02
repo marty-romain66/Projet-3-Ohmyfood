@@ -1,0 +1,11 @@
+.btn {
+    @include gradient;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 20px;
+    @include box-shadow;
+}
+

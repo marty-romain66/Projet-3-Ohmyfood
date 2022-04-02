@@ -1,0 +1,31 @@
+
+footer{
+    background-color: $footer__bg;
+    color: white;
+    width: 100%;
+    min-height: 200px;
+}
+.footer{
+    
+    
+    &__logo{
+    h2{
+        padding-top: 20px;
+        padding-inline-start: 40PX;
+        font-size: 40px;
+    }
+    font-family: $police_logo;
+}
+&__list{
+    ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        color: white;
+        gap: 10px;
+    }
+}
+}
