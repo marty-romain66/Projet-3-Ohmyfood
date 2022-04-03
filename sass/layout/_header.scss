@@ -1,27 +1,31 @@
-header{
+header {
     @include centrer;
     height: 150px;
     position: relative;
     z-index: 20;
     @include box-shadow;
-    a{
-     color: black;
+
+    a {
+        color: black;
     }
 }
-.logo{
+
+.logo {
     font-family: $police_logo;
     font-size: 1.5rem;
     text-align: center;
-    & h1{
+
+    & h1 {
         margin: 5px;
     }
 }
-.fa-arrow-left{
+
+.fa-arrow-left {
     font-size: 50px;
     position: absolute;
     top: 50%;
     left: 50px;
     transform: translateX(-50%);
     transform: translateY(-50%);
-    
+
 }
