@@ -83,6 +83,7 @@
 
 @media screen and (max-width: 778px) {
     .footer__list {
+        padding-bottom: 30px;
         ul {
             display: flex;
             flex-direction: column;
@@ -103,7 +104,7 @@
 
         h2,
         p {
-            font-size: 14px;
+            font-size: 16px;
         }
 
     }

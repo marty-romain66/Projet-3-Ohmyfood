@@ -475,6 +475,9 @@ footer {
 }
 
 @media screen and (max-width: 778px) {
+  .footer__list {
+    padding-bottom: 30px;
+  }
   .footer__list ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -494,7 +497,7 @@ footer {
 @media screen and (max-width: 388px) {
   .menu__cardText h2,
   .menu__cardText p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
