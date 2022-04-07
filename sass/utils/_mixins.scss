@@ -1,20 +1,4 @@
-@mixin gradient {
-    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-}
-
-@mixin new {
-    &::before {
-        content: "Nouveau";
-        position: absolute;
-        right: 30px;
-        top: 10px;
-        color: black;
-        background-color: $tertiaire;
-        padding: 10px;
-    }
-
-}
-
+// Mixin positionnement
 @mixin flex-center {
     display: flex;
     justify-content: center;
@@ -29,6 +13,30 @@
 
 }
 
+//  mixin pour les ombres
+@mixin box-shadow {
+    box-shadow: 0 5px 15px #00000033;
+}
+
+@mixin gradient {
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+}
+
+//  affiche alerte nouveau
+@mixin new {
+    &::before {
+        content: "Nouveau";
+        position: absolute;
+        right: 30px;
+        top: 10px;
+        color: black;
+        background-color: $tertiaire;
+        padding: 10px;
+    }
+
+}
+
+// Animation du menu
 @mixin animation_menu {
 
     animation: menu 2s;
@@ -39,9 +47,6 @@
             animation-delay: 1s * $i;
         }
     }
-
-
-
 }
 
 @keyframes menu {
@@ -53,10 +58,9 @@
     to {
         transform: translateY(0);
     }
-
-
 }
 
+// Affiche le coeur
 @mixin heart {
     &::before {
         content: "\f004";
@@ -98,6 +102,7 @@
     }
 }
 
+// Mixin pour sous-ligné
 @mixin underline {
     &::after {
         content: "";
@@ -109,13 +114,20 @@
 
 }
 
-@mixin box-shadow {
-    box-shadow: 0 5px 15px #00000033;
-}
 
+//  animation check
+@mixin check {
 
-@mixin grid-menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    animation: check 0.7s;
 
+    @keyframes check {
+        from {
+            transform: rotate(-270deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+            margin: 0;
+        }
+    }
 }

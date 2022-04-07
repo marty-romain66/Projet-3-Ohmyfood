@@ -1,26 +1,23 @@
-.bg__img {
-    width: 100%;
-    height: 300px;
-}
+//  Code css de la page menu
 
 .gout {
-    background-image: url("./images/restaurants/gout.jpg");
-    background-size: cover;
+    background-image: url($bg-image-gout );
+    @extend .bg-image ;
 }
 
 .enchantee {
-    background-image: url("./images/restaurants/enchantee.jpg");
-    background-size: cover;
+    background-image: url($bg-image-enchante);
+    @extend .bg-image ;
 }
 
 .francaise {
-    background-image: url("./images/restaurants/francaise.jpg");
-    background-size: cover;
+    background-image: url($bg-image-francaise );
+    @extend .bg-image ;
 }
 
 .delice {
-    background-image: url("./images/restaurants/delice.jpg");
-    background-size: cover;
+    background-image: url($bg-image-delice);
+    @extend .bg-image ;
 }
 
 .menuu {
@@ -62,86 +59,10 @@
     max-width: 100%;
     @include animation_menu;
 
-    &__card {
-        display: flex;
-        align-items: center;
-        background-color: white;
-        margin: 20px;
-        border-radius: 15px;
-        height: 100px;
-        overflow: hidden;
-        width: 70%;
-        @include box-shadow;
-        cursor: pointer;
-
-        &:hover .check {
-            transition: 0.7s;
-            margin-right: 0;
-
-            .fa-check {
-                animation: check 0.7s;
-            }
-        }
-
-        &Text {
-            flex: 1;
-            margin-left: 20px;
-            overflow: hidden;
-            max-width: 100%;
-        }
-
-        h2 {
-            margin-bottom: 10px;
-            font-size: 20px;
-
-
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        p {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-
-        }
-
-        &Price {
-            display: flex;
-            align-items: flex-end;
-            margin-left: auto;
-            height: 100%;
-            padding: 0 20px 50px 0;
-
-            p {
-                font-size: 15px;
-                font-weight: 900;
-                padding-right: 5px;
-            }
-        }
-
-        .check {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: $tertiaire;
-            height: 100%;
-            width: 70px;
-            margin-right: -70px;
-
-            .fa-check {
-                background-color: white;
-                padding: 10px;
-                border-radius: 50%;
-            }
-        }
-    }
+   
 
     &__titre {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+       @extend .flex-center ;
         flex-direction: column;
 
         h2 {
@@ -153,13 +74,3 @@
     }
 }
 
-@keyframes check {
-    from {
-        transform: rotate(-270deg);
-    }
-
-    to {
-        transform: rotate(0deg);
-        margin: 0;
-    }
-}

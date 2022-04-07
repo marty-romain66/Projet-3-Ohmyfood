@@ -1,0 +1,78 @@
+.menu__card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+    height: 100px;
+    overflow: hidden;
+    width: 70%;
+    @include box-shadow;
+    cursor: pointer;
+
+    &:hover .check {
+        transition: 0.7s;
+        margin-right: 0;
+
+        .fa-check {
+           @include check ;
+        }
+    }
+
+    &Text {
+        flex: 1;
+        margin-left: 20px;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    h2 , p {
+        margin-bottom: 10px;
+        
+
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+
+    &Price {
+        display: flex;
+        align-items: flex-end;
+        margin-left: auto;
+        height: 100%;
+        padding: 0 20px 50px 0;
+
+        p {
+            font-size: 15px;
+            font-weight: 900;
+            padding-right: 5px;
+        }
+    }
+
+    .check {
+        @extend .flex-center ;
+        background-color: $tertiaire;
+        height: 100%;
+        width: 70px;
+        margin-right: -70px;
+
+        .fa-check {
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    }
+}
+
+// @keyframes check {
+//     from {
+//         transform: rotate(-270deg);
+//     }
+
+//     to {
+//         transform: rotate(0deg);
+//         margin: 0;
+//     }
+// }

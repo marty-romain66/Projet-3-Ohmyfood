@@ -1,3 +1,4 @@
+// Pied de page
 footer {
     background-color: $footer__bg;
     color: white;
@@ -29,6 +30,9 @@ footer {
             align-items: center;
             color: white;
             gap: 10px;
+            p{
+                font-size: 18px;
+            }
         }
     }
 }

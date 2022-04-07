@@ -1,0 +1,24 @@
+.navbar__btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: $localisation__bg;
+    position: relative;
+    border-radius: 15px;
+    padding: 25px 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    @include box-shadow;
+
+    p {
+        font-weight: bold;
+    }
+
+    &:hover {
+        background-color: #f5edff;
+
+        .hover-color {
+            color: $primaire;
+        }
+    }
+}

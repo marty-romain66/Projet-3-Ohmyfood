@@ -5,16 +5,9 @@
         width: 100%;
     }
 .menu__card{
-    width: 90%;
+    width: 90% !important;
 }
-    .menu__cardText {
-
-        h2,
-        p {
-            font-size: 15px;
-        }
-
-    }
+   
 
 }
 
@@ -22,9 +15,9 @@
 
     .navbar {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         gap: 30px;
 
         &__btn {
@@ -95,5 +88,23 @@
             flex-direction: column;
             gap: 15px;
         }
+    }
+    .menu__cardText {
+
+        h2,
+        p {
+            font-size: 16px;
+        }
+
+    }
+}
+@media screen and (max-width: 388px) {
+.menu__cardText {
+
+        h2,
+        p {
+            font-size: 14px;
+        }
+
     }
 }
