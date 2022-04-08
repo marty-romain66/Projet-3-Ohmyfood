@@ -38,7 +38,7 @@
 @mixin animation_menu {
     animation: menu 2s;
     animation-fill-mode: both;
-    @for $i from 1 through 6 {
+    @for $i from 1 through 3 {
         &:nth-child(#{$i}) {
             animation-delay: 1s * $i;
         }
