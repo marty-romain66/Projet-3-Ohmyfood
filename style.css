@@ -440,8 +440,12 @@ footer {
   header {
     height: 100px;
   }
+  .logo {
+    font-size: 17px;
+  }
   .fa-arrow-left {
     font-size: 25px;
+    left: 35px;
   }
   .navbar {
     display: block;
@@ -475,6 +479,21 @@ footer {
 }
 
 @media screen and (max-width: 778px) {
+  .explorer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .explorer__titre {
+    width: 70%;
+    text-align: center;
+  }
+  .explorer_text {
+    width: 80%;
+    text-align: center;
+  }
   .footer__list {
     padding-bottom: 30px;
   }
