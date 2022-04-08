@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 //  mixin pour les ombres
@@ -33,15 +32,12 @@
         background-color: $tertiaire;
         padding: 10px;
     }
-
 }
 
 // Animation du menu
 @mixin animation_menu {
-
     animation: menu 2s;
     animation-fill-mode: both;
-
     @for $i from 1 through 6 {
         &:nth-child(#{$i}) {
             animation-delay: 1s * $i;
@@ -54,7 +50,6 @@
         transform: translateY(50px);
         opacity: 0;
     }
-
     to {
         transform: translateY(0);
     }
@@ -69,9 +64,7 @@
         position: absolute;
         right: 10px;
         font-size: 2rem;
-
     }
-
     &::after {
         content: "\f004";
         font-family: "Font Awesome 5 free";
@@ -86,15 +79,11 @@
         background-clip: text;
         -webkit-background-clip: text;
         background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
-
     }
-
     &:hover::after {
         opacity: 1;
         transition: 1s;
-
     }
-
     &:hover::before {
         opacity: 0;
         transition: 1s;
@@ -109,22 +98,16 @@
         background-color: $tertiaire;
         height: 0.25rem;
         width: 50px;
-
     }
-
 }
-
 
 //  animation check
 @mixin check {
-
     animation: check 0.7s;
-
     @keyframes check {
         from {
             transform: rotate(-270deg);
         }
-
         to {
             transform: rotate(0deg);
             margin: 0;

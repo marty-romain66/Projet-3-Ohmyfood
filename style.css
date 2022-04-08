@@ -522,8 +522,10 @@ footer {
 
 .hover__heart {
   position: absolute;
-  top: 0px;
+  top: 7px;
   right: 10px;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .hover__heart::before {
@@ -566,10 +568,8 @@ footer {
 }
 
 .heart__menu {
-  top: 50%;
-  right: 50px;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  top: 22px;
+  right: 25px;
 }
 
 .navbar__btn {

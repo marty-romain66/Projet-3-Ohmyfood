@@ -1,11 +1,12 @@
 .hover__heart {
     @include heart;
     position: absolute;
-    top: 0px;
+    top: 7px;
     right: 10px;
-}
-.heart__menu{
-    top: 50%;
-    right: 50px;
     transform: translate(-50%);
+}
+
+.heart__menu {
+    top: 22px;
+    right: 25px;
 }
